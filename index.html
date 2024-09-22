@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link href="assets/css/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Responsive plants website - Bedimcode</title>
+
+    <script>
+        const isUserLoggedIn = JSON.parse(localStorage.getItem("is-logged-in"))
+
+        if(isUserLoggedIn == -1) {
+            location.href = "/login.html"
+        }
+    </script>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="ri-leaf-line nav__logo-icon"></i> Plantex
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="login.html" class="nav__link">Login</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <a href="checkout.html" class="button--flex product__button" style="position: unset;">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="bg-page-header">
+            <div class="section container page-header">
+                <h1>Home</h1>
+            </div>
+        </section>
+
+        <section class="product section container" id="products">
+            <h2 class="section__title-center">
+                Check out our <br> products
+            </h2>
+
+            
+
+            <div class="product__container grid">
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product1.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Cacti Plant</h3>
+                    <span class="product__price">200 tk</span>
+
+                    <button product-name="Cacti Plant" product-key="1" product-price="200" id="product-1" class="add-to-cart-btn button--flex product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product2.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Cactus Plant</h3>
+                    <span class="product__price">150 tk</span>
+
+                    <button product-name="Cactus Plant" product-key="2" product-price="150" class="add-to-cart-btn button--flex product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product3.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Aloe Vera Plant</h3>
+                    <span class="product__price">300 tk</span>
+
+                    <button product-name="Aloe Vera Plant" product-key="3" product-price="300" class="add-to-cart-btn button--flex product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product4.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Succulent Plant</h3>
+                    <span class="product__price">400 tk</span>
+
+                    <button product-name="Succulent Plant" product-key="4" product-price="400" class="add-to-cart-btn button--flex product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product5.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Succulent Plant</h3>
+                    <span class="product__price">320 tk</span>
+
+                    <button product-name="Succulent Plant" product-key="5" product-price="320" class="add-to-cart-btn button--flex product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product6.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Green Plant</h3>
+                    <span class="product__price">180 tk</span>
+
+                    <button product-name="Green Plant" product-key="6" product-price="180" class="add-to-cart-btn button--flex product__button">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="ri-leaf-line footer__logo-icon"></i> Plantex
+                </a>
+
+                <h3 class="footer__title">
+                    Subscribe to our newsletter <br> to stay update
+                </h3>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Address</h3>
+
+                <ul class="footer__data">
+                    <li class="footer__information">Mirpur</li>
+                    <li class="footer__information">Dhaka, Bangladesh</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Contact Us</h3>
+
+                <ul class="footer__data">
+                    <li class="footer__information">+8801670210722</li>
+                    
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="footer__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    We accept all credit cards
+                </h3>
+
+                <div class="footer__cards">
+                    <img src="assets/img/card1.png" alt="" class="footer__card">
+                    <img src="assets/img/card2.png" alt="" class="footer__card">
+                    <img src="assets/img/card3.png" alt="" class="footer__card">
+                    <img src="assets/img/card4.png" alt="" class="footer__card">
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; Developed By - Abdullah Al Shakib | All rigths reserved</p>
+    </footer>
+
+    <div id="toast" style="transform: translateX(-1000px);">
+        <h2 id="toast-message"></h2>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
